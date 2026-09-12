@@ -2,8 +2,9 @@ import { Suspense } from "react"
 import Banner from "./Components/Banner"
 import Navbar from "./Components/Navbar"
 import Technologies from "./Components/Technologies/Technologies"
-import TechnologiesCard from "./Components/Technologies/TechnologiesCard"
+import TechnologiesCard from "./Components/Technologies/TechnologiesMap"
 import type { Ttechnoloy } from "./Type"
+import TechnologiesMap from "./Components/Technologies/TechnologiesMap"
 
 const createFetch=async():Promise<Ttechnoloy[]>=>{
   const res=await fetch('/data.json')
@@ -21,7 +22,7 @@ function App() {
       <Banner></Banner>
       <Technologies/>
       <Suspense fallback={<div>Loadddddiiiiiinnnnggggg</div>}>
-      <TechnologiesCard techPromise={techPromise}/>
+      <TechnologiesMap techPromise={techPromise}></TechnologiesMap>
       </Suspense>
     </>
   )

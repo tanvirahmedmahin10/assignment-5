@@ -7,4 +7,5 @@ export interface Ttechnoloy{
     rating: number,
     difficulty: string,
     badge: string
+    badgeColor:string
 }
