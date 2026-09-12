@@ -1,4 +1,4 @@
-import { Suspense } from "react"
+import { Suspense, useState } from "react"
 import Banner from "./Components/Banner"
 import Navbar from "./Components/Navbar"
 import Technologies from "./Components/Technologies/Technologies"
@@ -14,6 +14,7 @@ const createFetch=async():Promise<Ttechnoloy[]>=>{
 
 const techPromise=createFetch()
 function App() {
+  const [added, setAdded] = useState<Ttechnoloy[]>([]);
   
 
   return (
@@ -22,7 +23,7 @@ function App() {
       <Banner></Banner>
       <Technologies/>
       <Suspense fallback={<div>Loadddddiiiiiinnnnggggg</div>}>
-      <TechnologiesMap techPromise={techPromise}></TechnologiesMap>
+      <TechnologiesMap techPromise={techPromise} added={added} setAdded={setAdded}></TechnologiesMap>
       </Suspense>
     </>
   )

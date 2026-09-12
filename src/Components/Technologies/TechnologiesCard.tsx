@@ -1,15 +1,15 @@
-import { use, useState } from "react";
+import { use, useState, type Dispatch, type SetStateAction } from "react";
 import type { Ttechnoloy } from "../../Type";
 import TechnologyAdd from "./TechnologyAdd";
 
 interface tTechCardMain{
     tech:Ttechnoloy
+     added:Ttechnoloy[], 
+      setAdded:Dispatch<SetStateAction<Ttechnoloy[]>>
 }
 
-const TechnologiesCard = ({tech}:tTechCardMain) => {
+const TechnologiesCard = ({tech,added,setAdded}:tTechCardMain) => {
   const [Stacked,setStacked]=useState(false)
-  const [added, setAdded] = useState<Ttechnoloy[]>([]);
-
  
 
   const handleIsStacked=()=>{
@@ -58,9 +58,7 @@ const TechnologiesCard = ({tech}:tTechCardMain) => {
   </div>
   
 </div>
-<div>
-    <TechnologyAdd added={added} setAdded={setAdded}></TechnologyAdd>
-  </div>
+
   </div>
 
     );
