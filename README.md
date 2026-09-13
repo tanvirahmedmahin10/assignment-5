@@ -73,28 +73,30 @@ Showing or Hiding different UI parts based on a if/else condition
 
 Example:
 you can see that in my TechnologyAdd.tsx you can see that from line 26 conditional rendering is used if there is no items that it will show something else it will show other things
-if(added.length===0){
-    return (
-     <div className="p-6 rounded-xl shadow-lg">
-      <h2 className="text-xl font-semibold  mb-2">
-        Your Stack
-      </h2>
-      <p className="text-sm text-slate-400  py-1 rounded-full mb-3">
+if (added.length === 0) {
+  return (
+    <div className="p-6 rounded-xl shadow-lg">
+      <h2 className="text-xl font-semibold mb-2">Your Stack</h2>
+      <p className="text-sm text-slate-400 py-1 rounded-full mb-3">
         No technologies selected yet
       </p>
       <p className="text-slate-400 text-sm text-center border-2 border-dotted border-gray-200 p-7 rounded-lg">
         Your stack is empty.
       </p>
     </div>
-  )
-  }
-  return (
-    <div>
-    <div className=" grid grid-cols-1 gap-3 p-4 ">
-      <h2 className="text-xl font-semibold  mb-2">Your Stack</h2>
-      <p className="text-sm text-slate-400  py-1 rounded-full mb-3">{added.length} Technologies Selected</p>
-  )
+  );
+}
 
+return (
+  <div>
+    <div className="grid grid-cols-1 gap-3 p-4">
+      <h2 className="text-xl font-semibold mb-2">Your Stack</h2>
+      <p className="text-sm text-slate-400 py-1 rounded-full mb-3">
+        {added.length} Technologies Selected
+      </p>
+    </div>
+  </div>
+);
 7.How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
 
 
