@@ -73,7 +73,7 @@ Showing or Hiding different UI parts based on a if/else condition
 
 Example:
 you can see that in my TechnologyAdd.tsx you can see that from line 26 conditional rendering is used if there is no items that it will show something else it will show other things
-<!--  
+
 if (added.length === 0) {
   return (
     <div className="p-6 rounded-xl shadow-lg">
@@ -99,7 +99,7 @@ return (
   </div>
 );
 );
--->
+
 7.How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
 Ans:
 
