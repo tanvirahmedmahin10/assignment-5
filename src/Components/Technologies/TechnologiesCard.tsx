@@ -9,13 +9,12 @@ interface tTechCardMain{
 }
 
 const TechnologiesCard = ({tech,added,setAdded}:tTechCardMain) => {
-  const [Stacked,setStacked]=useState(false)
- 
+  const [Stacked, setStacked] = useState(false);
 
-  const handleIsStacked=()=>{
-    setStacked(true)
-    setAdded([...added,tech])
-  }
+const handleIsStacked = () => {
+  setStacked(true);
+  setAdded([...added, tech]);
+};
     return (
       <div>
    <div className="max-w-sm rounded-2xl bg-base-100 p-6 shadow-xl border border-base-200  flex flex-col justify-between">
@@ -51,8 +50,8 @@ const TechnologiesCard = ({tech,added,setAdded}:tTechCardMain) => {
     </div>
 
 
-    <button onClick={()=>handleIsStacked()} className="btn btn-neutral w-full" disabled={Stacked}>
-      {Stacked?'Stacked':'Add to Stack'}
+    <button onClick={()=>handleIsStacked()} className="btn btn-neutral w-full"   disabled={added.some(item => item.name === tech.name)}>
+      {added.some(item => item.name === tech.name)?'Stacked':'Add to Stack'}
       
     </button>
   </div>
