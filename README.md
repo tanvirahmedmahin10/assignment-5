@@ -100,6 +100,12 @@ return (
   //
 );
 7.How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
+Ans:
+
+The Parent passes data down to children through props
+
+The parent passes down a function. When the child calls that function, it passes data back up inside it
+
 
 
 
