@@ -31,3 +31,49 @@ This project was created to practice modern frontend development concepts, inclu
 *Tanvir Ahmed Mahin*
 
 If you like this project, consider giving the repository a star!
+
+
+# Q&A:
+
+1.What is JSX, and why is it used in React?
+Ans:
+Jsx let us write html code directly in javascript files
+
+it is used mainly because it is easy to read and write.you can also find what code you wrote very easily
+
+2.What is the difference between props and state?
+Ans:
+
+Props is where a data is sent to a component from its parent while State is data is created in the component
+
+3.What does the useState hook do, and where did you use it in this project?
+Ans:
+
+useState returns two things : current value and the function which is used to update the current value
+
+I used both of the time in App.tsx file
+
+
+4.What does the useEffect hook do, and why did you need it to load the JSON data?
+Ans:
+
+After the Component is shown it runs the code
+
+Fetching data takes a lot of time.Use effect is used here to reduce that time
+
+5.Why does every item in a .map() list need a unique key prop?
+Ans:
+
+Because without it the browser console shows an error
+
+6.What is conditional rendering? Show one place you used it (example: the empty stack message).
+Ans:
+
+Showing or Hiding different UI parts based on a if/else condition
+
+Example:
+
+7.How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
+
+
+
