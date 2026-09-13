@@ -1,6 +1,6 @@
 import type { Dispatch, SetStateAction } from "react";
 import type { Ttechnoloy } from "../../Type";
-import { TbCross, TbTrash, TbX } from "react-icons/tb";
+import { TbX } from "react-icons/tb";
 import { toast } from "react-toastify";
 
 interface tCardAdd {
@@ -20,6 +20,7 @@ const TechnologyAdd = ({ added, setAdded }: tCardAdd) => {
   
   const handleRemoveAll=()=>{
     setAdded([])
+    toast.error('Everthing Removed')
   }
 
   if(added.length===0){

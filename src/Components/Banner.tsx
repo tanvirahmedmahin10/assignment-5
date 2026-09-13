@@ -19,9 +19,9 @@ const Banner = () => {
       <button className="px-6 py-2.5 bg-gradient-to-r from-[#F97316]  to-[#EC4899] cursor-pointer text-white font-semibold rounded-lg transition duration-200">
         Explore Technologies
       </button>
-      <button className="px-6 py-2.5 border cursor-pointer border-gray-300font-semibold rounded-lg transition duration-200">
-        Learn More
-      </button>
+      <button className="px-6 py-2.5 border border-gray-300 font-semibold text-gray-700 rounded-lg cursor-pointer">
+  Learn More
+</button>
     </div>
   </div>
   <img src={banner} alt="Development Stack Banner" className="w-full max-w-md h-auto object-contain" />

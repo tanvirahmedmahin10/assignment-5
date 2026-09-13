@@ -16,8 +16,12 @@ const Navbar = () => {
       </ul>
 
       <div className="flex items-center gap-2">
-        <button className="btn btn-sm">SignIn</button>
-        <button className="btn btn-secondary btn-sm">SignUp</button>
+        <button className="px-3 py-1.5 text-sm font-semibold text-slate-700 cursor-pointer">
+    Sign In
+  </button>
+        <button className="px-4 py-1.5 text-sm font-semibold text-white bg-[#D81B7E] cursor-pointer rounded-full">
+    Sign Up
+  </button>
       </div>
     </nav>
     );

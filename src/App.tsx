@@ -2,7 +2,6 @@ import { Suspense, useState } from "react"
 import Banner from "./Components/Banner"
 import Navbar from "./Components/Navbar"
 import Technologies from "./Components/Technologies/Technologies"
-import TechnologiesCard from "./Components/Technologies/TechnologiesMap"
 import type { Ttechnoloy } from "./Type"
 import TechnologiesMap from "./Components/Technologies/TechnologiesMap"
 import Footer from "./Components/Footer"
@@ -24,7 +23,7 @@ function App() {
       <Navbar></Navbar>
       <Banner></Banner>
       <Technologies/>
-      <Suspense fallback={<div>Loadddddiiiiiinnnnggggg</div>}>
+      <Suspense fallback={<div className="container mx-auto">Loadddddiiiiiinnnnggggg</div>}>
       <TechnologiesMap techPromise={techPromise} added={added} setAdded={setAdded}></TechnologiesMap>
       </Suspense>
       <Footer/>

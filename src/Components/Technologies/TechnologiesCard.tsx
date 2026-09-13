@@ -15,7 +15,7 @@ const TechnologiesCard = ({tech,added,setAdded}:tTechCardMain) => {
 const handleIsStacked = () => {
   // setStacked(true);
   setAdded([...added, tech]);
-  toast.success(`${tech.name} is Added`)
+  toast.success(`${tech.name} is Added to Stack`)
 };
     return (
       <div>
