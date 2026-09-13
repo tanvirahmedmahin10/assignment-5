@@ -97,7 +97,7 @@ return (
       </p>
     </div>
   </div>
-  //
+);
 );
 
 7.How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
