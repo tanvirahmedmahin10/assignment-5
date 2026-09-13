@@ -2,7 +2,7 @@ import logo from './Images/logo-text.png';
 
 const Footer = () => {
     return (
-        <div>
+        <div className='p-3 bg-white rounded-lg border border-gray-100 shadow-sm'>
         <div className='container mx-auto flex justify-between my-15'>
             <div>
                 <img className='my-2' src={logo} alt="" />
