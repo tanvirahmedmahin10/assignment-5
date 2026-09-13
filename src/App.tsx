@@ -23,7 +23,11 @@ function App() {
       <Navbar></Navbar>
       <Banner></Banner>
       <Technologies/>
-      <Suspense fallback={<div className="container mx-auto">Loadddddiiiiiinnnnggggg</div>}>
+      <Suspense fallback={
+  <div className="flex items-center justify-center min-h-[150px]">
+    <span className="loading loading-spinner loading-lg "></span>
+  </div>
+}>
       <TechnologiesMap techPromise={techPromise} added={added} setAdded={setAdded}></TechnologiesMap>
       </Suspense>
       <Footer/>

@@ -15,7 +15,7 @@ const TechnologiesMap = ({ techPromise, added, setAdded }: tTechCard) => {
   return (
     <div className=" container mx-auto flex justify-between items-start gap-6 p-4 my-5">
       
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-4">
         {techs.map((tech, index) => (
           <TechnologiesCard 
             key={index} 
