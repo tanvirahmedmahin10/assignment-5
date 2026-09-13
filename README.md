@@ -57,7 +57,7 @@ I used both of the time in App.tsx file
 4.What does the useEffect hook do, and why did you need it to load the JSON data?
 Ans:
 
-After the Component is shown it runs the code
+After the Component is shown,it runs the code
 
 Fetching data takes a lot of time.Use effect is used here to reduce that time
 
