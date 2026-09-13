@@ -1,14 +1,14 @@
-# 🚀 Assignment 5
+# Assignment 5
 
 A modern and responsive web application built as part of Assignment 5. The project demonstrates the use of React with TypeScript and provides a clean, component-based user interface.
 
-## ✨ Features
+# Features
 
-* 🎨 **Clean & Responsive UI** — Simple and user-friendly interface that works across different screen sizes.
-* ⚡ **Dynamic React Components** — Built with reusable React components for a smooth and organized application structure.
-* 🛠️ **Type-Safe Development** — Uses TypeScript to make the code more reliable, maintainable, and easier to understand.
+* *Clean & Responsive UI* — Simple and user-friendly interface that works across different screen sizes.
+*  *Dynamic React Components* — Built with reusable React components for a smooth and organized application structure.
+* *Type-Safe Development* — Uses TypeScript to make the code more reliable, maintainable, and easier to understand.
 
-## 🧰 Technologies Used
+# Technologies Used
 
 * ⚛️ React
 * 📘 TypeScript
@@ -16,18 +16,18 @@ A modern and responsive web application built as part of Assignment 5. The proje
 * 🎨 CSS
 * 🔧 ESLint / Oxlint
 
-## 🌐 Live Demo
+# 🌐 Live Demo
 
 [View Live Project](https://assignment-5-mahin16.vercel.app/)
 
-## 📌 Project Purpose
+# Project Purpose
 
 This project was created to practice modern frontend development concepts, including React components, TypeScript, project organization, and responsive UI development.
 
 ---
 
-### 👨‍💻 Developed by
+# Developed by
 
-**Tanvir Ahmed Mahin**
+*Tanvir Ahmed Mahin*
 
-⭐ If you like this project, consider giving the repository a star!
+If you like this project, consider giving the repository a star!
