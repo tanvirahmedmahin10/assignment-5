@@ -1,32 +1,33 @@
-# React + TypeScript + Vite
+# 🚀 Assignment 5
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern and responsive web application built as part of Assignment 5. The project demonstrates the use of React with TypeScript and provides a clean, component-based user interface.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* 🎨 **Clean & Responsive UI** — Simple and user-friendly interface that works across different screen sizes.
+* ⚡ **Dynamic React Components** — Built with reusable React components for a smooth and organized application structure.
+* 🛠️ **Type-Safe Development** — Uses TypeScript to make the code more reliable, maintainable, and easier to understand.
 
-## React Compiler
+## 🧰 Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* ⚛️ React
+* 📘 TypeScript
+* ⚡ Vite
+* 🎨 CSS
+* 🔧 ESLint / Oxlint
 
-## Expanding the Oxlint configuration
+## 🌐 Live Demo
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+[View Live Project](https://assignment-5-mahin16.vercel.app/)
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+## 📌 Project Purpose
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+This project was created to practice modern frontend development concepts, including React components, TypeScript, project organization, and responsive UI development.
+
+---
+
+### 👨‍💻 Developed by
+
+**Tanvir Ahmed Mahin**
+
+⭐ If you like this project, consider giving the repository a star!
