@@ -18,7 +18,7 @@ A modern and responsive web application built as part of Assignment 5. The proje
 
 # 🌐 Live Demo
 
-[View Live Project](https://assignment-5-mahin16.vercel.app/)
+https://assignment-5-mahin16.vercel.app/
 
 # Project Purpose
 
