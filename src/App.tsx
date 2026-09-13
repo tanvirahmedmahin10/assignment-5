@@ -5,6 +5,7 @@ import Technologies from "./Components/Technologies/Technologies"
 import TechnologiesCard from "./Components/Technologies/TechnologiesMap"
 import type { Ttechnoloy } from "./Type"
 import TechnologiesMap from "./Components/Technologies/TechnologiesMap"
+import Footer from "./Components/Footer"
 
 const createFetch=async():Promise<Ttechnoloy[]>=>{
   const res=await fetch('/data.json')
@@ -12,8 +13,9 @@ const createFetch=async():Promise<Ttechnoloy[]>=>{
   return data
 }
 
-const techPromise=createFetch()
+
 function App() {
+  const [techPromise] = useState(() => createFetch());
   const [added, setAdded] = useState<Ttechnoloy[]>([]);
   
 
@@ -25,6 +27,7 @@ function App() {
       <Suspense fallback={<div>Loadddddiiiiiinnnnggggg</div>}>
       <TechnologiesMap techPromise={techPromise} added={added} setAdded={setAdded}></TechnologiesMap>
       </Suspense>
+      <Footer/>
     </>
   )
 }

@@ -1,6 +1,7 @@
 import type { Dispatch, SetStateAction } from "react";
 import type { Ttechnoloy } from "../../Type";
-import { TbTrash } from "react-icons/tb";
+import { TbCross, TbTrash, TbX } from "react-icons/tb";
+import { toast } from "react-toastify";
 
 interface tCardAdd {
   added: Ttechnoloy[];
@@ -13,7 +14,12 @@ const TechnologyAdd = ({ added, setAdded }: tCardAdd) => {
   const handleRemove=(add:Ttechnoloy)=>{
     let removingTech=added.filter(del=>del.name!==add.name)
     setAdded(removingTech)
+    toast.error(`${add.name} is Removed`)
     
+  }
+  
+  const handleRemoveAll=()=>{
+    setAdded([])
   }
 
   if(added.length===0){
@@ -25,17 +31,17 @@ const TechnologyAdd = ({ added, setAdded }: tCardAdd) => {
       <p className="text-sm text-slate-400  py-1 rounded-full mb-3">
         No technologies selected yet
       </p>
-      <p className="text-slate-400 text-sm text-center">
+      <p className="text-slate-400 text-sm text-center border-2 border-dotted border-gray-200 p-7 rounded-lg">
         Your stack is empty.
       </p>
     </div>
   )
   }
   return (
-    
-    <div className="grid grid-cols-1 gap-3 p-4 ">
+    <div>
+    <div className=" grid grid-cols-1 gap-3 p-4 ">
       <h2 className="text-xl font-semibold  mb-2">Your Stack</h2>
-      <p className="text-sm text-slate-400  py-1 rounded-full mb-3">technologies selected:{added.length}</p>
+      <p className="text-sm text-slate-400  py-1 rounded-full mb-3">{added.length} Technologies Selected</p>
       {added.map((add, index) => {
         return (
           <div 
@@ -65,7 +71,7 @@ const TechnologyAdd = ({ added, setAdded }: tCardAdd) => {
                 onClick={() => handleRemove(add)} 
                 className="cursor-pointer text-gray-500 hover:text-red-600 transition-colors"
               >
-                <TbTrash />
+                <TbX />
               </span>
             </div>
             
@@ -73,6 +79,12 @@ const TechnologyAdd = ({ added, setAdded }: tCardAdd) => {
           
         );
       })}
+    </div>
+    <div className="flex justify-center w-full">
+  <button onClick={handleRemoveAll} className="btn btn-error min-w-67 text-center my-6">
+    Remove All
+  </button>
+</div>
     </div>
   );
 };

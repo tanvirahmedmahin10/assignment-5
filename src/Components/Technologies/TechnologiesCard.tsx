@@ -1,6 +1,7 @@
-import { use, useState, type Dispatch, type SetStateAction } from "react";
+import { type Dispatch, type SetStateAction } from "react";
 import type { Ttechnoloy } from "../../Type";
-import TechnologyAdd from "./TechnologyAdd";
+
+import { toast } from "react-toastify";
 
 interface tTechCardMain{
     tech:Ttechnoloy
@@ -9,11 +10,12 @@ interface tTechCardMain{
 }
 
 const TechnologiesCard = ({tech,added,setAdded}:tTechCardMain) => {
-  const [Stacked, setStacked] = useState(false);
+  // const [Stacked, setStacked] = useState(false);
 
 const handleIsStacked = () => {
-  setStacked(true);
+  // setStacked(true);
   setAdded([...added, tech]);
+  toast.success(`${tech.name} is Added`)
 };
     return (
       <div>
@@ -51,7 +53,7 @@ const handleIsStacked = () => {
 
 
     <button onClick={()=>handleIsStacked()} className="btn btn-neutral w-full"   disabled={added.some(item => item.name === tech.name)}>
-      {added.some(item => item.name === tech.name)?'Stacked':'Add to Stack'}
+      {added.some(item => item.name === tech.name)?'Added to Stack':'Add to Stack'}
       
     </button>
   </div>
